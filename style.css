@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainColor: #2d7df6;
+    --secondaryColor: #0d43a6;
+    --thirdColor:#88b2da71;
+    --pagePadding: 0 2vh;
+}
+p{
+    user-select: none;
+}
+i{
+    cursor: pointer;
+}
+.searchBar{
+    padding: 0 10px;
+    height: 60px;
+    width: 100%;
+    background-color: var(--thirdColor);
+    /* border-bottom: 1px  solid rgb(196, 191, 191); */
+}
+.searchField{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#searchIcon{
+    position: absolute;
+    left: 1.5%;
+    font-size: 24px;
+}
+.searchField input{
+    width: 98%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 10px 40px;
+}
+.navDown{
+    /* background-color: #0d43a6; */
+    position: fixed;
+    bottom: 0px;
+    border-top: 1px solid rgb(196, 191, 191);
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around; */
+    padding: 8px 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    margin-top: 700px;
+    min-height: 55px;
+}
+.navDown img{
+    height: 35px;
+    border-radius: 17.5px;
+}
+.navDown i{
+    font-size: 35px;
+}
+.navBottomItems{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.explorePosts{
+    min-height: 90vh;
+    background-color: var(--thirdColor);
+}
+.postsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px !important;
+}
+.postBox{
+    cursor: pointer;
+    height: 130px;
+    width: 130px;
+    background-color: black;
+    border: 1px  solid rgb(196, 191, 191);
+    transition: all 0.2s ease;
+}
+.postBox:hover{
+    filter: brightness(60%);
+}
+.postBox img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.activeExplore{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
